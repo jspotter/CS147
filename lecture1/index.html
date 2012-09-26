@@ -2,13 +2,34 @@
 <html>
 	<head>
 		<title>MyApp</title>
+		<link rel="apple-touch-icon" href="appicon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-webapp-status-bar-style" content="grey" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
 	</head>
 	
 	<style type="text/css">
+		body
+		{
+			background: #fda;
+			font-family: Helvetica, Arial, sans-serif;
+		}
+
+		h3
+		{
+			size: 18pt;
+			color:gray;
+		}
+
+		.opacity
+		{
+			opacity: 0.4;
+		}
 	</style>
 	
 	<body>
-	 		<h2>Rio Akasaka</h2>
+	 		<h2>JP</h2>
 		<div id='bio'>Crime-solver. Noir detective extraordinaire.</div>
 	 
 	 	<h3>Assignments</h3>
@@ -18,8 +39,10 @@
 		</ul>
 	
 		<h3>A nice button</h3>
+		<div class="button">Click me</div>
 
 		<h3>An invisible seal</h3>
+		<p><img width="50" class="opacity" src="seal.png"></p>
 
 		<h3>A video</h3>
 
