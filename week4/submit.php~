@@ -50,6 +50,8 @@
 			$query = "insert into orders values('" . $name . "', '" . $email . "', '" . 
 				date("Y-m-d H:i:s") . "', '" .
 				$book . "');";
+				
+			print ($query);
 			
 			$result = mysql_query($query);
 			

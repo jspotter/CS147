@@ -2,4 +2,3 @@
 	$link = mysql_connect("mysql-user-master.stanford.edu", "ccs147jspotter", "aecaikei");
 	mysql_select_db("c_cs147_jspotter");
 ?>
-

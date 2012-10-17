@@ -21,7 +21,10 @@
 		<?php
 			include("config.php");
 			$query = "SELECT * FROM books;";
+			print("woo");
 			$result = mysql_query($query);
+			print("hi");
+			print($result);
 			while ($row = mysql_fetch_assoc($result)) {
 				echo "<tr><td><h2>".$row["title"]."</h2>";
 				echo "<p class='author'>".$row["author"]."</p>";
