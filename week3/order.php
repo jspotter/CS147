@@ -20,6 +20,9 @@
 		
 		<div class="orderarea">
 		<!-- This is where we'll put our form -->
+		<?php
+			include("menu.php");
+		?>
 		
 		
 		</div>

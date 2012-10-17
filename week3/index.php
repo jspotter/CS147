@@ -17,6 +17,16 @@
 		
 		<table>
 		<!-- This is where we'll put all our content -->
+		<?php
+			include("menu.php");
+			include("config.php");
+			$query = "select * from books";
+			$result = mysql_query($query);
+			while($row = mysql_fetch_assoc($result)) {
+				print_r($row);
+				print("\n");
+			}
+		?>
 		
 		</table>
 		
