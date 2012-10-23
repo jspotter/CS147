@@ -7,7 +7,8 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-webapp-status-bar-style" content="grey" />
 		<meta name="viewport" content="width=device-width, user-scalable=no" />
-		<script type="text/javascript" src="jquery.1.4.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
 		<script type="text/javascript">			
 			function submitLogin() {
 				$("#error").html("<img src=\"loading.gif\" style=\"width: 50px; height: 50px;\" >");
@@ -32,6 +33,11 @@
 			width: 100px;
 			text-align: center;
 			cursor: pointer;
+		}
+
+		.ui-loader
+		{
+			display: none;
 		}
 		
 		#button:hover
