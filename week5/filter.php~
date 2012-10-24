@@ -103,6 +103,11 @@
 	</form>
 	</div><!-- /content -->
 	
+	<?php
+		$filterClass = "ui-btn-active";
+		include ("./footer.php");
+	?>
+	
 	<script type="text/javascript">
 		$('#filter').live( 'pageinit',function(event){
 			$(".taphold").on('taphold', function(event){
@@ -124,12 +129,6 @@
 			});
 		});
 </script>	
-
-	<?php
-		$filterClass = "ui-btn-active";
-		include ("./footer.php");
-	?>
-
 </div><!-- /page -->
 
 

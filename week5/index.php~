@@ -18,7 +18,7 @@
 	<script src="jquery.mobile-1.2.0.js"></script>
 	
 	<script type="text/javascript">
-		function updateTimer()
+		function updateDate()
 		{
 			var curDate = new Date();
 			var electionDate = new Date("November 6, 2012");
@@ -29,14 +29,14 @@
 			var seconds = Math.floor(diff / 1000) % 60;
 			document.getElementById("timer").innerHTML = hours + " hours, " 
 				+ minutes + " minutes, " + seconds + " seconds until the election.";
-			setTimeout("updateTimer();", 1000);
+			setTimeout("updateDate();", 1000);
 		}
 	</script>
 
 </head> 
 
 	
-<body onload="updateTimer();"> 
+<body onload="updateTime();"> 
 
 <!-- Start of first page: #one -->
 <div data-role="page" id="one">
