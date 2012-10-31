@@ -23,7 +23,7 @@
 			?>
 		<div class="orderarea">
 		<!-- This is where we'll put our form -->
-		<form action="submit.php" id="someform" method="post">
+		<form id="someform" >
 				<label>Name: <input class="forminput" type="text" name="name" /></label>
 				<label>Email: <input class="forminput" type="text" name="email" autocapitalize="off" /></label>
 
@@ -56,6 +56,12 @@
 		$("a").click(function (event) {
 		    event.preventDefault();
 		    window.location = $(this).attr("href");
+		});
+		$("#someform").submit(function() {
+			event.preventDefault();
+			$.post("submit.php", $("#someform").serialize().function(data) {
+				$("result").html;
+			});
 		});
   </script>
  

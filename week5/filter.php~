@@ -30,7 +30,7 @@
 
 	<div data-role="content">	
 		<p></p>
-		<ul data-role="listview" data-inset="true" data-filter="true">
+		<ul data-role="listview" data-inset="true" data-filter="true" data-icon="arrow-r">
 			<?php
 				include ("./dbconnect.php");
 				include ("./dbfuncs.php");
@@ -103,11 +103,6 @@
 	</form>
 	</div><!-- /content -->
 	
-	<?php
-		$filterClass = "ui-btn-active";
-		include ("./footer.php");
-	?>
-	
 	<script type="text/javascript">
 		$('#filter').live( 'pageinit',function(event){
 			$(".taphold").on('taphold', function(event){
@@ -129,6 +124,12 @@
 			});
 		});
 </script>	
+
+	<?php
+		$filterClass = "ui-btn-active";
+		include ("./footer.php");
+	?>
+
 </div><!-- /page -->
 
 
